@@ -1,0 +1,76 @@
+<i-notice-bar icon="systemprompt" loop>
+  上研党建云已经成功上线!
+</i-notice-bar>
+
+<view class='base-padding row user-photo'>
+  <view class='user'>
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <view class='username'>{{userInfo.nickName}}</view>
+    <view class='color-grey font-lv3'></view>
+  </view>
+</view>
+<i-toast id="toast" hidden="{{ !hiddenmodalput }}"/>
+<modal hidden="{{ hiddenmodalput }}" title="绑定手机号" confirm-text="取消" bindconfirm="cancel" bindcancel="cancel" no-cancel="true">
+  <!-- <input id="accountInput" class="input_text" type="text" placeholder="请输入手机号" bindinput="accountInput"  /> -->
+  <view class="code_apply">
+    <!-- <input id="codeInput" class="input_text2" type="text" placeholder="请输入验证码" bindinput="codeInput" style="vertical-align: middle" />
+    <button class="apply" type="primary" disabled="{{code_disabled}}" bindtap="apply_code" style="vertical-align: middle">{{ currenttime }}</button> -->
+  </view>
+
+  <button class="apply" type="primary"  open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">点击授权</button>
+  <i-toast id="myToast" />
+</modal>
+
+<view class="page__bd">
+  <mp-cells bindtap="tapMyBaseInfo" wx:if="{{checkStatus}}">
+    <mp-cell value="基本信息" ext-class="my-text" link>
+      <image slot="icon" src="/images/about-us.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+    </mp-cell>
+  </mp-cells>
+
+
+  <mp-cells ext-class="my-text" bindtap="tapMyBacklogs" wx:if="{{checkStatus}}">
+    <mp-cell value="我的待办" ext-class="my-text" link>
+      <image slot="icon" src="/images/message_selft.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+      <view slot="footer" wx:if="{{unreadCount != 0}}">
+        <view style="display: inline-block;vertical-align:middle; font-size: 17px;">
+          <text class="my-text">未读</text>
+        </view>
+        <mp-badge style="margin-left: 5px;margin-right: 5px;" ext-class="blue" />
+      </view>
+    </mp-cell>
+  </mp-cells>
+
+  <mp-cells bindtap="tapMySpecials" wx:if="{{checkStatus}}">
+    <mp-cell value="我的上传" ext-class="my-text" link>
+      <image slot="icon" src="/images/download.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+    </mp-cell>
+  </mp-cells>
+
+  <!-- <mp-cells bindtap="develop" wx:if="{{checkStatus}}">
+    <mp-cell value="设置" ext-class="my-text" link>
+      <image slot="icon" src="/images/settings.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+    </mp-cell>
+  </mp-cells> -->
+
+  <mp-cells bindtap="exitLogin">
+    <mp-cell value="退出登录" ext-class="my-text" link>
+      <image slot="icon" src="/images/login.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+    </mp-cell>
+  </mp-cells>
+
+  <mp-cells>
+    <mp-cell  ext-class="my-text" link>
+      <image slot="icon" src="/images/yj.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+      <view>
+        <button open-type="feedback" class="yj_btn">意见反馈</button>
+      </view>
+			<view slot="footer">
+        <text class="my-text">意见反馈</text>
+      </view>
+    </mp-cell>
+  </mp-cells>
+</view>
+
+
+<button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" class="auth" hidden="{{hiddenName}}">点击授权</button>

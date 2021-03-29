@@ -1,0 +1,46 @@
+
+<!--  文章列表展示  -->
+<view class='panel base-padding base-margin-bottom cate-data'>
+  <!-- <view class='data'>
+  <view class='row'>
+    <view class='col'>
+      <text class='font-lv3'>待办类型</text>
+    </view>
+    <view class='col'>
+      <text class='font-lv3'>内容</text>
+    </view>
+
+  </view>
+</view> -->
+  <view class='panel-body'>
+
+   <view class='row' id="{{item.post.postId}}" bindtap='details' wx:for="{{content}}">
+        <view class='row-left'>
+          <navigator url="#">
+            <image mode='widthFix' class='box-shadow post_img_icon' wx:if="{{item.post.postThumbnail==null}}" src='/images/java.jpeg'/>
+              <image mode='widthFix' class='box-shadow post_img_icon' wx:if="{{item.post.postThumbnail!=null}}" src='{{basePath+item.post.postThumbnail}}'/>
+          </navigator>
+        </view>
+        <view class='row-right'>
+          <view    class='ellipsis-1row font-lv2'>{{item.post.postTitle}}</view>
+          <view class='text-muted info'>
+            <view><image src='/images/clock.png'></image>{{item.post.postDate}}</view>
+            <view> <image src='/images/eye.png'></image> 
+               待办 </view>
+          </view>
+          <view class='text-muted ellipsis-3row desc'>
+            <label wx:if="{{item.post.postType=='post'}}">提示单</label>
+            <label wx:if="{{item.post.postType=='special'}}">专题</label>
+            <label wx:if="{{item.post.postType=='meeting'}}">会议通知</label>
+              <!-- {{item.post.postSummary}} -->
+          </view>
+        </view>
+      </view>
+
+
+
+
+  </view>
+</view>
+<i-load-more tip="{{tip}}" loading="{{loading}}" />
+<i-toast id="toast" />

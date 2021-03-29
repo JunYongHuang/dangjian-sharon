@@ -1,0 +1,94 @@
+
+<!--  文章列表展示  -->
+<view class='panel base-padding base-margin-bottom cate-data'>
+  <view class='panel-body'>
+
+   <view class='row' id="{{item.postId}}" wx:for="{{content}}">
+        <view class='row-left'>
+          <navigator url="#">
+            
+              <image mode='widthFix' class='box-shadow post_img_icon' wx:if="{{item.specialType !=null && item.specialType.postThumbnail!=null}}" src='{{basePath+item.specialType.postThumbnail}}'/>
+              <image mode='widthFix' class='box-shadow post_img_icon' wx:else  src='/images/java.jpeg'/>
+          </navigator>
+        </view>
+        <view class='row-right'>
+          <view    class='ellipsis-1row font-lv2' id="{{item.postId}}"  bindtap='details'>{{item.postTitle}}</view>
+          <view class='text-muted info'>
+            <view><image src='/images/clock.png'></image>{{item.postDate}}</view>
+            <view> <image src='/images/eye.png'></image> {{item.postViews}} 阅读 </view>
+          </view>
+          <view class='text-muted info'>
+            <view><image src='/images/read.png'></image>
+              <label wx:if="{{item.postStatus == 1}}"> 等待审核</label>
+              <label wx:elif="{{item.postStatus == 0}}"> 审核通过</label>
+              <label wx:else="{{item.postStatus == 2}}"> 审核未通过</label>
+              
+            </view>
+            <view wx:if="{{item.postStatus == 2}}" > <image src='/images/more.png'></image> <label  data-content="{{item.examineContent}}"  
+              style="text-decoration-line:underline;" 
+              bindtap='unPassRease'> 原因</label> </view>
+          </view>
+          <view class='text-muted ellipsis-3row'>
+              所属专题：{{item.specialType.specialTypeName}}
+          </view>
+          <view class='text-muted info' style="font-weight:bold;/* color:#e21818; */text-decoration-line:underline;">
+            <view id="{{item.postId}}"  bindtap='editPost'><image src='/images/yj.png'></image> 编辑 </view>
+            <view id="{{item.postId}}"  bindtap='deletePost'> <image src='/images/recycle.png'></image> 删除 </view>
+          </view>
+        </view>
+      </view>
+
+
+
+
+  </view>
+
+  
+</view>
+
+<i-load-more tip="{{tip}}" loading="{{loading}}" />
+
+<!-- <view class="submit_reset" >
+  
+  <button class="save_btn" type="primary" bindtap="writeSpecial" >写专题</button>
+
+</view> -->
+
+<!-- 弹框 -->
+<view class='tankuang2' wx:if="{{showhaibao}}">
+    <view class='container1'>
+      <view class="section" style="margin-top:30px;">
+
+          <textarea disabled = "true" placeholder="审核不通过" name="textarea" value="{{rease}}"></textarea>
+
+
+          <view class="ajc" style="margin:10px;">
+
+            <button class="sure_btn" plain="true" type="primary" bindtap="cancelTanKuang" >确定</button>
+            <!-- <button class="attend_btn" plain="true" type="primary"  form-type="submit">提交</button> -->
+          </view>
+
+      </view>     
+    </view>
+     
+</view>
+<!-- 删除弹框 -->
+<view class='tankuang3' wx:if="{{showhaibao3}}">
+    <view class='container1'>
+      <view class="section" style="margin: 90px 20px 0 20px;">
+        <form bindsubmit="bindFormSubmit">
+          <label >删除后不能恢复，确认删除吗?</label>
+          
+          <view class="ajc" style="margin:50px;">
+
+            <button class="noAttend_btn" plain="true" type="default" bindtap="cancelTanKuang3" >取消</button>
+            <button class="attend_btn" plain="true" type="primary"  form-type="submit">确认</button>
+          </view>
+
+        </form>
+      </view>     
+    </view>
+     
+</view>
+
+<i-toast id="toast" />

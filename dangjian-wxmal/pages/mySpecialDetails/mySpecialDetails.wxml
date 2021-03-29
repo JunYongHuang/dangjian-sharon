@@ -1,0 +1,53 @@
+<import src="/html2wxml-template/html2wxml.wxml" />
+
+<view class='row info'>
+ <view class='col-8'>
+    <text class='ellipsis-2row font-lv1'>{{post.postTitle}}</text>
+  </view>
+</view>
+
+<view class='data'>
+  <view class='row'>
+    <view class='col'>
+      <text class='font-lv3'>{{post.postViews}}</text>
+      <text class='text-muted font-lv5'>阅读</text>
+    </view>
+    <view class='col'>
+      <text class='font-lv3'>{{postDate}}</text>
+      <text class='text-muted font-lv5'>发表于</text>
+    </view>
+  </view>
+</view>
+
+
+<!-- // 将Page中的text数据作为Markdown格式渲染 -->
+
+<!-- <rich-text nodes="{{post.postContent}}" ></rich-text> -->
+<htmltowxml text="{{post.postType=='special'?post.postContent:post.postContentMd}}" highlightLanguages="{{['html','js','php','css','cpp','ruby']}}" bindWxmlTagATap="wxmlTagATap"  type="{{post.postType=='special'?'html':'md'}}"></htmltowxml>
+<i-toast id="toast" />
+
+<!-- <view class="submit_reset" wx:if="{{post.postType=='meeting'}}">
+  
+      <button class="save_btn" plain="true" type="{{myLeave.status == 1?'primary':'default'}}" bindtap="canotAttend" data-index="1">不参加</button>
+      <button class="submit_btn" plain="true" type="{{myLeave.status == 2?'primary':'default'}}" bindtap="canAttend">参加</button>
+</view> -->
+
+<!-- 弹框 -->
+<!-- <view class='tankuang2' wx:if="{{showhaibao}}">
+    <view class='container1'>
+      <view class="section" style="margin-top:30px;">
+        <form bindsubmit="bindFormSubmit">
+          <textarea placeholder="请输入请假理由" name="textarea" value="{{myLeave.leaveContent}}"></textarea>
+
+
+          <view class="ajc" style="margin:10px;">
+
+            <button class="noAttend_btn" plain="true" type="default" bindtap="cancelTanKuang" >取消</button>
+            <button class="attend_btn" plain="true" type="primary"  form-type="submit">提交</button>
+          </view>
+
+        </form>
+      </view>     
+    </view>
+     
+</view> -->
