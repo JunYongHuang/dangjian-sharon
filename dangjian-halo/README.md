@@ -1,23 +1,34 @@
-<h1 align="center"><a href="https://halo-doc.ryanc.cc" target="_blank">Halo</a></h1>
+<h1 align="center"><a href="https://github.com/JunYongHuang/dangjian-sharon" target="_blank">Dangjian-Halo</a></h1>
 
-> Halo 可能是最好的 Java 应用系统。
+> Dangjian-Halo 可能是最好的 Java 党建后台系统。
 
-<p align="center">
-<a href="https://ryanc.cc"><img alt="Author" src="https://img.shields.io/badge/author-ruibaby-red.svg?style=flat-square"/></a>
-<a href="#"><img alt="JDK" src="https://img.shields.io/badge/JDK-1.8-yellow.svg?style=flat-square"/></a>
-<a href="https://github.com/ruibaby/halo/releases"><img alt="GitHub release" src="https://img.shields.io/github/release/ruibaby/halo.svg?style=flat-square"/></a>
-<a href="https://travis-ci.org/ruibaby/halo"><img alt="Travis CI" src="https://img.shields.io/travis/ruibaby/halo.svg?style=flat-square"/></a>
-<a href="https://hub.docker.com/r/ruibaby/halo/"><img alt="Docker Build Status" src="https://img.shields.io/docker/build/ruibaby/halo.svg?style=flat-square"/></a>
-</p>
+
+[![QQ群](https://img.shields.io/badge/QQ%E7%BE%A4-924715723-yellowgreen.svg)](https://jq.qq.com/?_wv=1027&k=19odMmjy)
+[![码云](https://img.shields.io/badge/Gitee-%E7%A0%81%E4%BA%91-yellow.svg)](https://gitee.com/hjy1234123/dangjian-sharon)
+[![Github](https://img.shields.io/badge/Github-Github-red.svg)](https://github.com/JunYongHuang/dangjian-sharon)
+
+#### 项目介绍
+简单党建小程序
+
+建党百年已进入倒计时，希望能帮助到各位小伙伴。
+
+# 说明
+- [感谢。W 项目基于blog-sharon开发](https://gitee.com/qinxuewu/blog-sharon/tree/master/blog-halo)
 
 ------------------------------
+### 体验地址
+- 上研党云体验版:
 
+![上研党云体验版](https://images.gitee.com/uploads/images/2021/0408/131609_d86447b1_893422.png "微信图片_20210408131535.png")
+- 相同框架版:
+
+![同城生活](https://images.gitee.com/uploads/images/2021/0408/142504_1a6edb0b_893422.jpeg "0.jpg")
 
 ## 简介
 
 **Halo** [ˈheɪloʊ]，意为光环。当然，你也可以当成拼音读(哈喽)。
 
-轻快，简洁，功能强大，使用 Java 开发的应用系统。
+轻快，简洁，功能强大，使用 Java 开发的党建后台应用系统。
 
 
 
@@ -38,7 +49,6 @@ nohup java -Xms256m -Xmx256m -jar halo-latest.jar  &
 
 
 > 注意：如使用 Idea，Eclipse 等IDE运行的话，需要安装Lombok插件，另外暂不支持JDK10，主题管理和主题上传会有问题。
-> 更多请参考[ Halo 使用文档 ](https://halo-doc.ryanc.cc/installation/)或者[ Wiki](https://github.com/ruibaby/halo/wiki)。
 
 
 
@@ -56,9 +66,9 @@ nohup java -Xms256m -Xmx256m -jar halo-latest.jar  &
 
 ## 许可证
 
-[![license](https://img.shields.io/github/license/ruibaby/halo.svg?style=flat-square)](https://github.com/ruibaby/halo/blob/master/LICENSE)
+[![license](https://img.shields.io/github/license/ruibaby/halo.svg?style=flat-square)](https://github.com/JunYongHuang/dangjian-sharon/blob/master/LICENSE)
 
-> Halo 使用 GPL-v3.0 协议开源，请尽量遵守开源协议，即便是在中国。
+> Dangjian-Halo 使用 GPL-v3.0 协议开源，请尽量遵守开源协议，即便是在中国。
 
 ## 感谢
 
@@ -86,14 +96,16 @@ Halo 的诞生离不开下面这些项目：
 - [OwO](https://github.com/DIYgod/OwO)：前端表情库
 
 
-## 界面展示
+## 后台界面展示
 
-![](https://i.loli.net/2018/12/16/5c15b6edb9a49.png)
-![](https://i.loli.net/2018/12/16/5c15b6ee08333.png)
-![](https://i.loli.net/2018/12/16/5c15b6ec853af.png)
-![](https://i.loli.net/2018/12/16/5c15b6ec50238.png)
-![](https://i.loli.net/2018/12/16/5c15b6ed4057a.png)
-![](https://i.loli.net/2018/12/16/5c15b6eb01f2d.png)
-![](https://i.loli.net/2018/12/16/5c15b6eb98898.png)
-![](https://i.loli.net/2018/12/16/5c15b6eb3b506.png)
-![](https://i.loli.net/2018/12/16/5c15b6ebf29fd.png)
+
+![首页](https://images.gitee.com/uploads/images/2021/0408/145551_37b1bc04_893422.png "12.png")
+![提示单管理](https://images.gitee.com/uploads/images/2021/0408/145608_31a0b480_893422.png "13.png")
+![提示单编辑](https://images.gitee.com/uploads/images/2021/0408/145617_25689d26_893422.jpeg "14.jpg")
+![白名单](https://images.gitee.com/uploads/images/2021/0408/145624_af55e621_893422.png "15.png")
+![图片附件](https://images.gitee.com/uploads/images/2021/0408/145633_82100f48_893422.png "16.png")
+
+
+## 您的支持是我坚持开源的最大动力
+
+![捐助支持](https://images.gitee.com/uploads/images/2021/0408/142645_bba4c69b_893422.jpeg "8.jpg")
