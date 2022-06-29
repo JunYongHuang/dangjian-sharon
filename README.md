@@ -70,9 +70,9 @@
 ## 开源小项目
 - [dangjian-sharon](https://github.com/JunYongHuang/dangjian-sharon):   一款简单党建小程序
 - [dangjian-halo](https://github.com/JunYongHuang/dangjian-sharon/dangjian-halo):  Java后台项目 
-- 建议使用idea开发工具
+  （建议使用idea开发工具）
 - [dangjian-sharon](https://github.com/JunYongHuang/dangjian-sharon/dangjian-sharon): 微信小程序项目
-- 建议使用微信开发者工具
+  （建议使用微信开发者工具）
 
 ## 您的支持是我坚持开源的最大动力
 
