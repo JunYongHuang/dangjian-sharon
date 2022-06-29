@@ -3,7 +3,7 @@
 > Dangjian-Halo 可能是最好的 Java 党建后台系统。
 
 
-[![QQ群](https://img.shields.io/badge/QQ%E7%BE%A4-924715723-yellowgreen.svg)](https://jq.qq.com/?_wv=1027&k=19odMmjy)
+[![QQ群](https://img.shields.io/badge/QQ%E7%BE%A4-723201457-yellowgreen.svg)](https://jq.qq.com/?_wv=1027&k=19odMmjy)
 [![码云](https://img.shields.io/badge/Gitee-%E7%A0%81%E4%BA%91-yellow.svg)](https://gitee.com/hjy1234123/dangjian-sharon)
 [![Github](https://img.shields.io/badge/Github-Github-red.svg)](https://github.com/JunYongHuang/dangjian-sharon)
 
@@ -105,6 +105,12 @@ Halo 的诞生离不开下面这些项目：
 ![白名单](https://images.gitee.com/uploads/images/2021/0408/145624_af55e621_893422.png "15.png")
 ![图片附件](https://images.gitee.com/uploads/images/2021/0408/145633_82100f48_893422.png "16.png")
 
+## 开源小项目
+- [dangjian-sharon](https://github.com/JunYongHuang/dangjian-sharon):   一款简单党建小程序
+- [dangjian-halo](https://github.com/JunYongHuang/dangjian-sharon/dangjian-halo):  Java后台项目 
+- 建议使用idea开发工具
+- [dangjian-sharon](https://github.com/JunYongHuang/dangjian-sharon/dangjian-sharon): 微信小程序项目
+- 建议使用微信开发者工具
 
 ## 您的支持是我坚持开源的最大动力
 

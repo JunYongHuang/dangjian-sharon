@@ -1,6 +1,6 @@
 # dangjian-sharon
 
-[![QQ群](https://img.shields.io/badge/QQ%E7%BE%A4-924715723-yellowgreen.svg)](https://jq.qq.com/?_wv=1027&k=19odMmjy)
+[![QQ群](https://img.shields.io/badge/QQ%E7%BE%A4-723201457-yellowgreen.svg)](https://jq.qq.com/?_wv=1027&k=19odMmjy)
 [![码云](https://img.shields.io/badge/Gitee-%E7%A0%81%E4%BA%91-yellow.svg)](https://gitee.com/hjy1234123/dangjian-sharon)
 [![Github](https://img.shields.io/badge/Github-Github-red.svg)](https://github.com/JunYongHuang/dangjian-sharon)
 
@@ -69,7 +69,10 @@
 
 ## 开源小项目
 - [dangjian-sharon](https://github.com/JunYongHuang/dangjian-sharon):   一款简单党建小程序
-
+- [dangjian-halo](https://github.com/JunYongHuang/dangjian-sharon/dangjian-halo):  Java后台项目 
+- 建议使用idea开发工具
+- [dangjian-sharon](https://github.com/JunYongHuang/dangjian-sharon/dangjian-sharon): 微信小程序项目
+- 建议使用微信开发者工具
 
 ## 您的支持是我坚持开源的最大动力
 
