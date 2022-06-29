@@ -28,7 +28,7 @@ public interface PostRepository extends JpaRepository<Post, Long> {
      * @return List
      */
     @Query(value = "SELECT * FROM halo_post where post_type= :postType ORDER BY post_date DESC LIMIT 5", nativeQuery = true)
-    List<Post> findTopFive(String postType);
+    List<Post> findTopFive(@Param("postType")String postType);
 
     /**
      * 更新文章阅读数
