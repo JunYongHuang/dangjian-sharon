@@ -14,6 +14,7 @@ import cn.hutool.core.util.StrUtil;
 import cn.hutool.extra.servlet.ServletUtil;
 import cn.hutool.http.HtmlUtil;
 import com.alibaba.fastjson.JSON;
+import com.dyw.model.ContentValues;
 import com.dyw.model.WechatInfo;
 import com.dyw.utils.SendSms;
 import com.dyw.utils.StringUtil;
@@ -361,7 +362,7 @@ public class ApiWhiteController {
 
 
 
-        String appId = "wxa16fa46d75fa6577";
+        String appId = ContentValues.APPID;// "wxa16fa46d75fa6577";
         String sessionKey = jo.getString("sessionKey");
 
 
